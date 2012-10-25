@@ -101,17 +101,17 @@ cassandra_nodetool: <%= node['datadog']['cassandra']['nodetool'] %>
 
 <% if node['datadog']['jvm_jmx']['server'] %>
 # java jmx
-jvm_jmx_server: <%= node['jvm_jmx']['server'] %>
-jvm_jmx_user: <%= node['jvm_jmx']['user'] %>
-jvm_jmx_pass: <%= node['jvm_jmx']['pass'] %>
-jvm_jmx_name: <%= node['jvm_jmx']['name'] %>
+jvm_jmx_server: <%= node['datadog']['jvm_jmx']['server'] %>
+jvm_jmx_user: <%= node['datadog']['jvm_jmx']['user'] %>
+jvm_jmx_pass: <%= node['datadog']['jvm_jmx']['pass'] %>
+jvm_jmx_name: <%= node['datadog']['jvm_jmx']['name'] %>
 <% end %>
 
 <% if node['datadog']['tomcat_jmx']['server'] %>
 # tomcat jmx
-tomcat_jmx_server: <%= node['tomcat_jmx']['server'] %>
-tomcat_jmx_user: <%= node['tomcat_jmx']['user'] %>
-tomcat_jmx_pass: <%= node['tomcat_jmx']['pass'] %>
+tomcat_jmx_server: <%= node['datadog']['tomcat_jmx']['server'] %>
+tomcat_jmx_user: <%= node['datadog']['tomcat_jmx']['user'] %>
+tomcat_jmx_pass: <%= node['datadog']['tomcat_jmx']['pass'] %>
 <% end %>
 
 <% if node['datadog']['varnish'] %>
